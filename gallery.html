@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E LEARNING</title>
+    <meta name="description" content="Learn HTML, CSS, JS and Python online with E LEARNING platform">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>📚E LEARNING</h1>
+    <p>Welcome to our online learning platform!</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+            <a href="">Courses</a>
+           
+        </li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+  
+  <section class="gallery-header">
+    <h1> <span>Learning Moments</span></h1>
+    <p>
+      Take a look at some glimpses from our online classes, student projects, and exciting workshops.  
+      Every picture tells a story of growth, creativity, and learning!
+    </p>
+  </section>
+  
+  
+<section class="gallery-section">
+  <div class="gallery-container">
+
+    <div class="gallery-item">
+      <img src="D:\first project\cat-1.jpg" alt="Online Class">
+      <div class="overlay">Interactive Online Class</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="D:\first project\cat-2.jpg" alt="Team Discussion">
+      <div class="overlay">Team Discussion</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="D:\first project\cat-3.jpg" alt="Student Project">
+      <div class="overlay">Student Project Showcase</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="D:\first project\cat-4.jpg" alt="Workshop">
+      <div class="overlay">Workshop Highlights</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="D:\first project\istockphoto-1.jpg" alt="Achievement">
+      <div class="overlay">Student Achievement</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="D:\first project\istockphoto-2.jpg" alt="Learning Moment">
+      <div class="overlay">Fun Learning Moment</div>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f8f9fc;
+  color: #333;
+}
+
+
+.gallery-header {
+  text-align: center;
+  padding: 80px 10% 40px;
+ 
+  color: #fff;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease;
+}
+
+.gallery-header h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.gallery-header h1 span {
+  color: black;
+}
+
+.gallery-header p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 1.6;
+  color: black;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .gallery-header {
+    padding: 60px 8% 30px;
+    border-radius: 0;
+  }
+
+  .gallery-header h1 {
+    font-size: 30px;
+  }
+
+  .gallery-header p {
+    font-size: 15px;
+  }
+}
+
+
+.gallery-section {
+  padding: 60px 10%;
+  background: #ffffff;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  justify-content: center;
+}
+
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+/* RESPONSIVE  */
+@media (max-width: 768px) {
+  .gallery-section {
+    padding: 40px 5%;
+  }
+
+  .overlay {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+</style>
+
+<footer>
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <h2>E-Learning</h2>
+                </div>
+				
+			<div class="footer-links">
+			
+                   <div class="links-section">	
+                         <h3>Get Started</h3>
+			 <ul>
+                <li><a href="#"><li>Visit Chapman</a></li>
+				<li><a href="#"><li>view tuition</a></li>
+				<li><a href="#"><li>apply now</a></li>
+				<li><a href="#"><li>work at Chapman</a></li>
+			</ul>			  
+                 </div>	
+        					   
+                    <div class="links-section">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Our Story</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+					
+					   <div class="links-section">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+
+					
+					<div class="links-section">
+             <h3>Contact no.</h3>
+			 <ul class="info">
+			 <li>
+			 <i class="fa-solid fa-phone"></i>
+			 <p><a href=""#>+1 234 567 8900</a></p>
+			 </li>
+			 
+			  <li>
+			  <i class="fa-solid fa-envelope"></i>
+			 <p><a href="">abc@example.com</a></p>
+			 </li>
+			 </ul>
+			 
+            </div>
+                    
+
+					<div class="links-section">
+			     <h3>Follow us</h3>			
+                <div class="footer-social">					
+                
+               <ul>
+        		   <a href=""class="fa-brands fa-facebook-f"></a>
+				 <a href="" class="fa-brands fa-twitter"></a>
+				 <a href="" class="fa-brands fa-linkedin"></i></a>
+				 <a href="" class="fa-brands fa-instagram"></i></a>
+				</ul>
+				   
+                </div>	
+            </div>
+            </div>              
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
